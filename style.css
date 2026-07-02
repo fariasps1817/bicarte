@@ -6,6 +6,7 @@
     color: black;
     font-family: sans-serif; /* tipo de fonte universal */
     letter-spacing: 1px;
+    box-sizing: border-box;
 }
 
 header {
@@ -18,8 +19,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;     
+
         a{
             color: #ffffff;
+            display: inline-block;
+            padding: 16px 0;
             font-size: 18px;
             text-transform: capitalize;
             letter-spacing: 1px;
@@ -32,6 +36,7 @@ header {
 
         span{
             a {
+                padding: 0;
                 font-size: 32px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
@@ -47,4 +52,67 @@ header {
 
 }
 
-main {}
+main {
+    section {
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        height: 585px;
+
+        .call-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 700px;
+            padding-bottom: 200px;
+        }
+
+
+
+        div {
+            width: 560px;
+            h1 {
+                color: #ffffff;
+                font-size: 64px;
+                margin-bottom: 32px;
+
+                span {
+                    color: #ffbf00;
+                }
+
+            }
+
+            p {
+                color: #b2b2b2;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                display: inline-block;
+                padding: 16px 32px;
+                width: fit-content;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 600;
+                background: linear-gradient(#ffbf00, #a4761c);
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 200ms;
+
+                &:hover {
+                    background: linear-gradient(#df9705, #4d4221);
+                }
+
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
